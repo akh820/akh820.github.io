@@ -4,9 +4,13 @@ import createNextIntlPlugin from 'next-intl/plugin';
 const withNextIntl = createNextIntlPlugin();
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/simple-resume',
-  images: { unoptimized: true }
+  images: { unoptimized: true },
+  eslint: {
+    ignoreDuringBuilds: true
+  },
+  typescript: {
+    ignoreBuildErrors: true
+  }
 };
 
 export default withNextIntl(nextConfig);

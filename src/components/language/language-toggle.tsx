@@ -2,7 +2,8 @@
 
 import * as React from "react"
 import { Globe } from "lucide-react"
-import { usePathname, useRouter } from "next-intl/client"
+import { usePathname, useRouter } from "next/navigation"
+import { useLocale } from "next-intl"
 import { locales } from "@/config/i18n"
 
 import { Button } from "@/components/ui/button"
@@ -21,9 +22,11 @@ const localeNames = {
 export function LanguageToggle() {
   const pathname = usePathname()
   const router = useRouter()
+  const currentLocale = useLocale()
 
   const switchLanguage = (locale: string) => {
-    router.replace(pathname, { locale })
+    const newPath = pathname.replace(`/${currentLocale}`, `/${locale}`)
+    router.push(newPath)
   }
 
   return (

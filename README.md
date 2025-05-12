@@ -49,7 +49,7 @@ npm run build
 
 이 프로젝트는 GitHub Pages를 통해 자동으로 배포됩니다. `main` 브랜치에 변경사항을 푸시하면 GitHub Actions가 자동으로 빌드하고 배포합니다.
 
-배포된 사이트는 [https://akh820.github.io/simple-resume](https://akh820.github.io/simple-resume)에서 확인할 수 있습니다.
+배포된 사이트는 [https://akh820.github.io](https://akh820.github.io)에서 확인할 수 있습니다.
 
 ## 커스터마이징
 

@@ -1,5 +1,3 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import Header from "@/components/resume/header";
 import Navbar from "@/components/resume/navbar";
@@ -9,6 +7,11 @@ import Skills from "@/components/resume/skills";
 import Education from "@/components/resume/education";
 import Contact from "@/components/resume/contact";
 import DownloadButton from "@/components/resume/download-button";
+import { locales } from "@/config/i18n";
+
+export function generateStaticParams() {
+  return locales.map(locale => ({ locale }));
+}
 
 export default function Home() {
   const t = useTranslations();
