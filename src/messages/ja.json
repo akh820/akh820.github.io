@@ -1,0 +1,68 @@
+{
+  "header": {
+    "name": "ホン・ギルドン",
+    "title": "フルスタック開発者"
+  },
+  "about": {
+    "title": "紹介",
+    "content": "こんにちは。新しい技術の習得を楽しむ情熱的な開発者です。ウェブ技術とユーザーエクスペリエンスに興味があり、常により良いコードを書くために努力しています。"
+  },
+  "experience": {
+    "title": "経歴",
+    "items": [
+      {
+        "position": "ジュニアウェブ開発者",
+        "company": "ABC テクノロジー",
+        "period": "2021 - 現在",
+        "description": "ReactとNode.jsを活用したウェブアプリケーション開発。ユーザーインターフェース改善とバックエンドAPI実装。"
+      },
+      {
+        "position": "インターン開発者",
+        "company": "XYZ ソリューションズ",
+        "period": "2020 - 2021",
+        "description": "HTML、CSS、JavaScriptを使用したウェブサイト開発と維持管理。"
+      }
+    ]
+  },
+  "skills": {
+    "title": "スキル",
+    "frontend": "フロントエンド",
+    "backend": "バックエンド",
+    "others": "その他",
+    "frontendSkills": ["React", "Next.js", "TypeScript", "HTML/CSS", "TailwindCSS"],
+    "backendSkills": ["Node.js", "Express", "MongoDB", "SQL"],
+    "otherSkills": ["Git", "GitHub", "Figma", "Agile/Scrum"]
+  },
+  "education": {
+    "title": "教育",
+    "degree": "コンピュータ工学学士",
+    "school": "韓国大学",
+    "year": "2016 - 2020"
+  },
+  "contact": {
+    "title": "連絡先",
+    "email": "メール",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "emailAddress": "example@email.com",
+    "githubLink": "github.com/akh820",
+    "linkedinLink": "linkedin.com/in/yourusername"
+  },
+  "navbar": {
+    "about": "紹介",
+    "experience": "経歴",
+    "skills": "スキル",
+    "education": "教育",
+    "contact": "連絡先"
+  },
+  "theme": {
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  },
+  "language": {
+    "ko": "韓国語",
+    "ja": "日本語"
+  },
+  "download": "履歴書ダウンロード"
+} 
