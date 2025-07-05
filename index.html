@@ -423,13 +423,16 @@
 
           button.style.display = "none";
 
-          html2pdf()
-            .from(resumeContent)
-            .set(opt)
-            .save()
-            .then(() => {
-              button.style.display = "flex";
-            });
+          // 폰트 등 리소스가 완전히 렌더링될 시간을 확보하기 위해 짧은 지연 추가
+          setTimeout(() => {
+            html2pdf()
+              .from(resumeContent)
+              .set(opt)
+              .save()
+              .then(() => {
+                button.style.display = "flex";
+              });
+          }, 500);
         });
     </script>
   </body>
