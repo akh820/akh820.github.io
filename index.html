@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>안계홍 | 풀스택 개발자</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Noto Sans KR", sans-serif;
+      }
+      @media print {
+        .no-print {
+          display: none !important;
+        }
+        /* Projects 섹션이 새 페이지에서 시작하도록 강제 */
+        .page-break-before {
+          page-break-before: always;
+        }
+      }
+      /* 요소 내부에서 페이지가 잘리지 않도록 방지 */
+      .avoid-break-inside {
+        page-break-inside: avoid;
+      }
+    </style>
+  </head>
+  <body class="bg-orange-50 text-gray-800">
+    <div class="container mx-auto max-w-4xl p-4 sm:p-8">
+      <!-- PDF로 변환할 전체 콘텐츠 영역 -->
+      <div id="resume-content" class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <header
+          class="flex flex-col-reverse sm:flex-row justify-between items-start mb-6 border-b border-gray-200 pb-4 avoid-break-inside"
+        >
+          <div class="text-left mt-8 sm:mt-0">
+            <h1 class="text-4xl font-bold text-gray-800">안계홍</h1>
+            <p class="text-xl text-gray-500 mt-3">Full-Stack Developer</p>
+
+            <div
+              class="flex flex-col sm:flex-row items-start sm:items-center flex-wrap gap-x-6 gap-y-2 mt-6 text-sm text-gray-600"
+            >
+              <span class="flex items-center gap-2">
+                <span class="inline-block w-5 h-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="text-gray-700"
+                  >
+                    <title>Email</title>
+                    <path d="M0 0h20v20H0z" fill="none" />
+                    <path
+                      d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
+                    />
+                    <path
+                      d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
+                    />
+                  </svg>
+                </span>
+                <a
+                  href="mailto:aka820@naver.com"
+                  class="hover:text-orange-600 hover:underline"
+                  >aka820@naver.com</a
+                >
+              </span>
+              <span class="flex items-center gap-2">
+                <span class="inline-block w-5 h-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="text-gray-700"
+                  >
+                    <title>Phone</title>
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                    />
+                  </svg>
+                </span>
+                <span>010-6862-5812</span>
+              </span>
+              <!-- <span class="flex items-center gap-2">
+                <span class="inline-block w-5 h-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    fill="currentColor"
+                    class="text-gray-700"
+                  >
+                    <title>Location</title>
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </span>
+                <span>서울특별시 송파구 석촌동</span>
+              </span> -->
+              <span class="flex items-center gap-2">
+                <span class="inline-block w-5 h-5">
+                  <svg
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    class="text-gray-700"
+                  >
+                    <title>GitHub</title>
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22v3.29c0 .316.19.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </span>
+                <a
+                  href="https://github.com/akh820"
+                  target="_blank"
+                  class="hover:text-orange-600 hover:underline"
+                  >github.com/akh820</a
+                >
+              </span>
+            </div>
+          </div>
+          <img
+            class="w-32 h-40 object-cover bg-gray-200 rounded-lg sm:ml-8 flex-shrink-0"
+            src="./photo1.jpg"
+            alt="안계홍 증명사진"
+            onerror="this.onerror=null;this.src='https://placehold.co/128x160/E2E8F0/4A5568?text=Photo';"
+          />
+        </header>
+
+        <main class="space-y-6">
+          <section id="summary" class="avoid-break-inside">
+            <h2
+              class="text-2xl font-bold text-orange-700 border-l-4 border-orange-500 pl-4 mb-3"
+            >
+              Summary
+            </h2>
+            <p class="text-base leading-relaxed">
+              안녕하세요, 1년 4개월 경력 풀스택 개발자 안계홍입니다. MES
+              환경에서 데이터가 정확하고 사용자가 편한 시스템을 만드는 것을 가장
+              중요하게 생각하며 일해왔습니다. 여러 사용자가 동시에 요청할 때
+              발생하던 고질적인 동시성 문제를 JPA 낙관적 락으로 해결한 경험이
+              있습니다. 또한, 느린 시스템의 응답 속도를 Redis 캐싱으로 끌어올려
+              사용자의 작업 효율을 높이는 데 기여했습니다. 앞으로도 성장의
+              발판이 되는 튼튼한 시스템을 만드는 개발자가 되고 싶습니다.
+            </p>
+          </section>
+
+          <section id="skills" class="avoid-break-inside">
+            <h2
+              class="text-2xl font-bold text-orange-700 border-l-4 border-orange-500 pl-4 mb-3"
+            >
+              Skills
+            </h2>
+            <div class="space-y-3">
+              <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                  Backend
+                </h3>
+                <div
+                  class="flex flex-wrap items-center gap-x-2 gap-y-2 text-sm font-medium text-gray-800 divide-x divide-gray-300"
+                >
+                  <span class="pl-2">Java</span>
+                  <span class="pl-2">Kotlin</span>
+                  <span class="pl-2">Spring Boot</span>
+                  <span class="pl-2">JPA</span>
+                  <span class="pl-2">MyBatis</span>
+                  <span class="pl-2">MySQL</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                  Frontend
+                </h3>
+                <div
+                  class="flex flex-wrap items-center gap-x-2 gap-y-2 text-sm font-medium text-gray-800 divide-x divide-gray-300"
+                >
+                  <span class="pl-2">JavaScript</span>
+                  <span class="pl-2">React</span>
+                  <span class="pl-2">Thymeleaf</span>
+                </div>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                  Infra & Tools
+                </h3>
+                <div
+                  class="flex flex-wrap items-center gap-x-2 gap-y-2 text-sm font-medium text-gray-800 divide-x divide-gray-300"
+                >
+                  <span class="pl-2">AWS (EC2, RDS)</span>
+                  <span class="pl-2">Docker</span>
+                  <span class="pl-2">Redis</span>
+                  <span class="pl-2">Git & GitHub</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="education" class="avoid-break-inside">
+            <h2
+              class="text-2xl font-bold text-orange-700 border-l-4 border-orange-500 pl-4 mb-3"
+            >
+              Education & Certifications
+            </h2>
+            <div class="space-y-2">
+              <div>
+                <h3 class="font-bold text-lg">아주대학교</h3>
+                <p class="text-gray-600">전자공학과 학사 / 2021.08</p>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">중앙정보처리학원</h3>
+                <p class="text-gray-600">
+                  Java 기반 웹 개발자 양성 과정 수료 / 2024.02
+                </p>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg">자격증</h3>
+                <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                  <li>정보처리기사 / 2025.06</li>
+                  <li>SQL 개발자(SQLD) / 2025.04</li>
+                  <li>네트워크관리사 2급 / 2015.09</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="experience" class="avoid-break-inside">
+            <h2
+              class="text-2xl font-bold text-orange-700 border-l-4 border-orange-500 pl-4 mb-3"
+            >
+              Work Experience
+            </h2>
+            <div>
+              <h3 class="text-xl font-bold">에잇핀</h3>
+              <p class="text-md font-medium text-gray-600">
+                2024.05 ~ 2025.08 | 웹 개발자 | 기업부설연구소
+              </p>
+              <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                <li>
+                  소상공인용 MES 시스템의 프론트엔드 및 백엔드 개발/유지보수.
+                </li>
+                <li>
+                  React, Kotlin, Spring Boot 기반 신규 기능 개발 및 서비스
+                  안정화
+                </li>
+                <li>
+                  JPA 낙관적 락, Redis 캐싱을 적용하여 시스템 성능 및 안정성
+                  개선에 기여.
+                </li>
+                <li>
+                  코드 공통화 및 개발 프로세스 개선으로 팀 생산성 향상 기여.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="projects" class="page-break-before">
+            <h2
+              class="text-2xl font-bold text-orange-700 border-l-4 border-orange-500 pl-4 mb-3"
+            >
+              Projects
+            </h2>
+            <div class="py-2 avoid-break-inside">
+              <h3 class="text-xl font-bold">
+                IMOS | 중소 제조 기업용 MES 신규 개발
+              </h3>
+              <p class="text-sm text-gray-500 my-2">2025.03 ~ 2025.08</p>
+              <p class="italic text-gray-700 mb-4">
+                React와 Kotlin/Spring Boot 기반 자재관리 기능 구현
+              </p>
+
+              <div class="space-y-2">
+                <h4 class="font-semibold text-lg text-gray-800">Problem:</h4>
+                <p>
+                  다수 작업자의 동시 자재 요청으로 인한 재고 데이터 불일치 문제
+                  발생.
+                </p>
+                <p>
+                  단일 컴포넌트 에러가 전역으로 전파되어 애플리케이션 전체가
+                  멈추는 현상.
+                </p>
+
+                <h4 class="font-semibold text-lg text-gray-800">
+                  Action & Result:
+                </h4>
+                <ul class="list-disc list-inside space-y-1 pl-2">
+                  <li>
+                    다수 작업자의 동시 요청으로 인한 재고 데이터 불일치 현상을
+                    동시성 문제로 정의하고, JPA의 낙관적 락을 도입하여 문제를
+                    해결함으로써 시스템 안정성 향상.
+                  </li>
+                  <li>
+                    React-error-boundary를 활용한 단계별 오류 처리 로직을
+                    구현하여, 특정 컴포넌트의 에러가 전체 애플리케이션을
+                    중단시키는 현상을 방지하고 서비스 안정성 향상.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr class="my-6 border-gray-200" />
+
+            <div class="py-2 avoid-break-inside">
+              <h3 class="text-xl font-bold">
+                오리온 MES | MES 관리 시스템 신규 개발
+              </h3>
+              <p class="text-sm text-gray-500 my-2">2024.05 ~ 2025.02</p>
+              <p class="italic text-gray-700 mb-4">파일 관리 웹 시스템 개발</p>
+
+              <div class="space-y-2">
+                <h4 class="font-semibold text-lg text-gray-800">Problem:</h4>
+                <p>
+                  문서 미리보기 시 실시간 썸네일 생성으로 인한 긴 로딩
+                  시간(5-8초) 및 DB 부하.
+                </p>
+
+                <h4 class="font-semibold text-lg text-gray-800">
+                  Action & Result:
+                </h4>
+                <ul class="list-disc list-inside space-y-1 pl-2">
+                  <li>
+                    자주 조회되는 썸네일 데이터에 Redis 캐시를 적용하여,
+                    미리보기 로딩 시간을 90% 이상 단축 <br />(평균 8초 → 500ms).
+                  </li>
+                  <li>
+                    Thymeleaf Fragment로 UI 컴포넌트 모듈화, 코드 중복 제거 및
+                    유지보수성 향상.
+                  </li>
+                  <li>
+                    Docker Volume을 이용한 데이터 영속성 보장으로 시스템 안정성
+                    확보.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- PDF 다운로드 버튼 및 스크립트 -->
+    <button
+      id="download-pdf-btn"
+      class="no-print fixed bottom-8 right-8 bg-orange-600 hover:bg-orange-700 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-transform transform hover:scale-110"
+    >
+      <span class="sr-only">PDF 다운로드</span>
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+        ></path>
+      </svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+      // PDF 다운로드 기능
+      document
+        .getElementById("download-pdf-btn")
+        .addEventListener("click", function () {
+          const button = this;
+          const resumeContent = document.getElementById("resume-content");
+
+          // PDF 생성 옵션
+          const opt = {
+            margin: 0.4,
+            filename: "안계홍_이력서.pdf",
+            image: { type: "jpeg", quality: 0.98 },
+            html2canvas: { scale: 2, useCORS: true, letterRendering: true },
+            jsPDF: { unit: "in", format: "a4", orientation: "portrait" },
+          };
+
+          const generatePdf = () => {
+            html2pdf()
+              .from(resumeContent)
+              .set(opt)
+              .save()
+              .finally(() => {
+                // PDF 생성 성공/실패 여부와 관계없이 버튼 다시 표시
+                button.style.display = "flex";
+              });
+          };
+
+          // PDF 생성 중 버튼 숨기기
+          button.style.display = "none";
+
+          // 모든 웹 폰트가 로드될 때까지 기다린 후 PDF 생성
+          // 로컬과 배포 환경의 렌더링 차이를 줄여줍니다.
+          document.fonts.ready
+            .then(() => {
+              // 폰트가 렌더링될 약간의 시간을 추가로 확보하기 위해 setTimeout 사용
+              setTimeout(generatePdf, 300);
+            })
+            .catch((err) => {
+              console.error("폰트 로딩 중 오류 발생:", err);
+              // 폰트 로딩에 실패하더라도 PDF 생성 시도
+              generatePdf();
+            });
+        });
+    </script>
+  </body>
+</html>
